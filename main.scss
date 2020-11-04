@@ -1,0 +1,286 @@
+html{
+    scroll-behavior: smooth;
+}
+// Я прижал футер к низу страницы при помощи grid-template-columns
+body{
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    margin-right: 0;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 130%;
+}
+header{
+    text-align: center;
+    background: url(../img/header.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .header__title {
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 130%;
+        color: #FFFFFF;
+        margin-bottom: 25px;
+    }
+    .header__subtitle {
+        width: 379px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    
+    .header__arrow {
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        bottom:48px;
+        left: calc(50% - 48px);
+    }
+}
+
+.portfolio{
+    .portfolio__title {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 70px;
+    }
+    .portfolio__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap:16px;
+        row-gap:30px;
+        margin-bottom: -45px;
+    }
+    .portfolio__example {
+        padding: 20px;
+        box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+        transition: color 0.5s;
+        &:hover{
+            transition: transform 0.9s;
+            transform: translateY(-15px);
+        }
+    }
+    .portfolio__example-link{
+        transition: color 0.3s;
+        &:hover{
+            color:rgb(77, 77, 241)
+        }
+    }
+    .portfolio__example-img {
+        margin-bottom: 20px;
+    }
+    .portfolio__example-title {
+        margin-bottom: 13px;
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 130%;
+    }
+    .portfolio__example-subtitle {
+        margin-bottom: 10px;
+        font-family: Montserrat;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 130%;
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: #1E4776;
+    padding-top: 45px;
+    padding-bottom: 130px;
+    margin-top: 160px;
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer__about {
+    }
+    .footer__about-name {
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 130%;
+        color: #7E9EC9;
+        margin-bottom: 25px;
+    }
+    .footer__about-subtext {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        color: #7E9EC9;
+    }
+    .footer__social {
+    }
+    .footer__social-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        color: #FFFFFF;
+        margin-bottom: 14px;
+    }
+    .footer__social-icons {
+        display: flex;
+        column-gap: 46px;
+        justify-content: center;
+    }
+    .footer__social-icon-item {
+    }
+    .footer__contact {
+
+    }
+    .footer__contact-button {
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: 3px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 50px;
+        padding:10px 27px;
+        transition: all 0.3s ease-in ;
+        &:hover{
+            background-color: white;
+            color: #1E4776;
+        }
+    }
+    .footer__contact-text {
+        margin-top: 24px;
+        font-family: Montserrat;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 130%;
+        color: #7E9EC9;
+    }
+}
+
+// FOREST
+main{
+    text-align: center;
+    grid-gap:120px;
+    .main__title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .main__img {
+        display: block;
+        height: auto;
+        width: 100%;
+        max-width: 892px;
+        margin: 0 auto;
+        margin-bottom: 69px;
+    }
+    .main__text {
+        width: 730px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        font-family: Montserrat;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    .main__sub-text {
+        font-family: Montserrat;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .main__sub-link {
+        text-decoration: none;
+        color:#275BEC;
+    }
+    .main__button {
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #275BEC;
+        border: 3px solid #275BEC;
+        border-radius: 50px;
+        padding: 20px 30px;
+        
+        &:hover{
+            transition: all 0.3s ease-out;
+            background: #275BEC;
+            color:white;
+        }
+    }
+}
+
+@media(max-width:768px){
+    footer{
+        .footer__wrapper{
+            flex-direction: column-reverse;
+            row-gap:50px;
+        }
+        .footer__about-subtext{
+            padding-bottom: 61px;
+        }
+    }
+}
+@media(max-width:430px){
+    header{
+        .header__title{
+            font-size: 32px;
+            line-height: 130%;
+        }
+        .header__subtitle{
+            width:279px;
+            font-size: 14px;
+            line-height: 150%;
+            white-space:wrap;
+        }
+        .header__arrow{
+            display: none;
+        }
+    }
+    main{
+        .main__title{
+            font-size: 28px;
+            line-height: 130%;
+        }
+        .main__text{
+            margin: 0 auto;
+            margin-bottom: 15px;
+            width: 290px;
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+
+}
